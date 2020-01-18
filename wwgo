@@ -1,0 +1,15 @@
+#!/usr/bin/perl
+
+use strict; use warnings; use 5.22; no warnings 'experimental';
+
+# This script will be called by the web server and update USB scripts
+#
+# Process arguments one at a time, typically each is its own command
+# sometimes a command has arguments; the code for processing that command
+# will know to pull additional arguments if needed.
+#
+# wwgo is designed to work on Raspian for RPi and the Intel Raspian Desktop
+#
+
+my $arg = '';   # used to capture the next argument
+my $command = '';       # used to capture the next command
